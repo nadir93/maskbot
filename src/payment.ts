@@ -26,6 +26,10 @@ export class Payment {
     ]);
 
     //일반결제 상태확인
+    await page.waitForSelector(
+      '.paymethod.payment_method_tab._generalPaymentsTab',
+    );
+    
     const name = await page.evaluate(x => {
       //console.log('x:', x);
       const className = document.querySelector(x).getAttribute('class');
