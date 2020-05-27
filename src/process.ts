@@ -51,7 +51,8 @@ export class Process {
         page.goto(config.mainSite, {
           waitUntil: 'load',
         }),
-        page.waitFor('#account > div > a > i'),
+        //page.waitFor('#account > div > a > i'),
+        page.waitFor('#account > a'),
       ]);
       //log.debug('page:', page);
 

@@ -15,7 +15,7 @@ export class Login {
 
     //로그인 화면으로 이동
     // await page.waitFor("#account > div > a > i");
-    await page.click('#account > div > a > i');
+    await page.click('#account > a');
     page = await this.waitLogin(page, targetPage);
   };
 
